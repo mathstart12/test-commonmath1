@@ -777,23 +777,101 @@
         ],
         chapters: [
           { id: 1, name: "Part1. 삼차방정식, 사차방정식", questions: [
-            { question: "Q1. 삼차방정식 \\(ax^3+bx^2+cx+d=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라고 할 때 근과 계수의 관계를 설명하시오.", answer: "", hint: "", explanation: "" },
-            { question: "Q2. 삼차방정식 \\(x^3-3x^2+2x-k=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\((3-\\alpha)(3-\\beta)(3-\\gamma)=3\\)을 만족하는 상수 \\(k\\)의 값은?<br>① 2 ② 3 ③ 4 ④ 5 ⑤ 6", answer: "", hint: "", explanation: "" },
-            { question: "Q3. 삼차방정식 \\(x^3+ax^2+bx+c=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\(\\frac{1}{\\alpha\\beta}, \\frac{1}{\\beta\\gamma}, \\frac{1}{\\gamma\\alpha}\\)를 세 근으로 하는 삼차방정식을 \\(x^3+4x^2-2x-1=0\\)이라 한다. \\(a^2+b^2+c^2\\)의 값은? (단, \\(a, b, c\\)는 상수이다.)<br>① 18 ② 21 ③ 24 ④ 27 ⑤ 30", answer: "", hint: "", explanation: "" },
-            { question: "Q4. \\(x^3=1\\)의 한 허근을 \\(w\\)라 할 때, 다음을 답하시오.<br>(1) \\(w+\\overline{w}\\)<br>(2) \\(w\\overline{w}\\)<br>(3) \\(w^2\\)<br>(4) \\(w^2+w+1\\)<br>(5) 주기성은?", answer: "", hint: "", explanation: "" },
-            { question: "Q5. \\(x^3=-1\\)의 한 허근을 \\(w\\)라 할 때, 다음을 답하시오.<br>(1) \\(w+\\overline{w}\\)<br>(2) \\(w\\overline{w}\\)<br>(3) \\(w^2\\)<br>(4) \\(w^2-w+1\\)<br>(5) 주기성은?", answer: "", hint: "", explanation: "" },
-            { question: "Q6. 이차방정식 \\(x^2+x+1=0\\)의 한 근을 \\(w\\)라 할 때, 다음 식의 값을 구하여라.<br>\\((w+\\frac{1}{w})+(w^2+\\frac{1}{w^2})+(w^3+\\frac{1}{w^3})+\\cdots+(w^{10}+\\frac{1}{w^{10}})\\)", answer: "", hint: "", explanation: "" },
-            { question: "Q7. 사차방정식 \\(x(x-1)(x-2)(x-3)-3=0\\)의 두 허근을 \\(\\alpha, \\beta\\)라 할 때, \\(\\alpha^2+\\beta^2\\)의 값은?<br>① 0 ② 3 ③ 6 ④ 9 ⑤ 12", answer: "", hint: "", explanation: "" },
-            { question: "Q8. 사차방정식 \\(x^4-x^3-7x^2+x+6=0\\)의 네 실근 중 가장 작은 것을 \\(\\alpha\\), 가장 큰 것을 \\(\\beta\\)라 할 때, \\(\\beta-\\alpha\\)의 값을 구하시오.", answer: "", hint: "", explanation: "" }
+            { question: "Q1. 삼차방정식 \\(ax^3+bx^2+cx+d=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라고 할 때 근과 계수의 관계를 설명하시오.", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "삼차방정식 \\(2x^3-6x^2+4x-8=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, 근과 계수의 관계를 이용하여 \\(\\alpha+\\beta+\\gamma\\), \\(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha\\), \\(\\alpha\\beta\\gamma\\)의 값을 구하시오.",
+                "삼차방정식의 근과 계수의 관계를 이용하여 두 근의 합이 3이고 곱이 -2이며 세 근의 곱이 4인 삼차방정식을 만드시오.",
+                "삼차방정식 \\(x^3+px^2+qx+r=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\(\\alpha^2+\\beta^2+\\gamma^2\\)를 \\(p, q, r\\)로 나타내는 방법을 설명하시오."
+              ]
+            },
+            { question: "Q2. 삼차방정식 \\(x^3-3x^2+2x-k=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\((3-\\alpha)(3-\\beta)(3-\\gamma)=3\\)을 만족하는 상수 \\(k\\)의 값은?<br>① 2 ② 3 ③ 4 ④ 5 ⑤ 6", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "삼차방정식 \\(x^3-4x^2+3x-k=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\((2-\\alpha)(2-\\beta)(2-\\gamma)=4\\)를 만족하는 상수 \\(k\\)의 값은?<br>① -4 ② -2 ③ 0 ④ 2 ⑤ 4",
+                "삼차방정식 \\(x^3+2x^2-x-k=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\((1-\\alpha)(1-\\beta)(1-\\gamma)=5\\)를 만족하는 상수 \\(k\\)의 값은?<br>① -6 ② -4 ③ -2 ④ 0 ⑤ 2",
+                "삼차방정식 \\(x^3-5x^2+4x-k=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\((4-\\alpha)(4-\\beta)(4-\\gamma)=8\\)를 만족하는 상수 \\(k\\)의 값을 구하시오."
+              ]
+            },
+            { question: "Q3. 삼차방정식 \\(x^3+ax^2+bx+c=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\(\\frac{1}{\\alpha\\beta}, \\frac{1}{\\beta\\gamma}, \\frac{1}{\\gamma\\alpha}\\)를 세 근으로 하는 삼차방정식을 \\(x^3+4x^2-2x-1=0\\)이라 한다. \\(a^2+b^2+c^2\\)의 값은? (단, \\(a, b, c\\)는 상수이다.)<br>① 18 ② 21 ③ 24 ④ 27 ⑤ 30", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "삼차방정식 \\(x^3+ax^2+bx+c=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\(\\alpha+\\beta, \\beta+\\gamma, \\gamma+\\alpha\\)를 세 근으로 하는 삼차방정식이 \\(x^3-6x^2+8x-2=0\\)일 때, \\(a+b+c\\)의 값을 구하시오.",
+                "삼차방정식 \\(x^3+2x^2-3x-1=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\(\\alpha^2, \\beta^2, \\gamma^2\\)를 세 근으로 하는 삼차방정식을 구하시오.",
+                "삼차방정식 \\(x^3-3x^2+x+2=0\\)의 세 근을 \\(\\alpha, \\beta, \\gamma\\)라 할 때, \\(\\alpha-1, \\beta-1, \\gamma-1\\)을 세 근으로 하는 삼차방정식을 구하시오."
+              ]
+            },
+            { question: "Q4. \\(x^3=1\\)의 한 허근을 \\(w\\)라 할 때, 다음을 답하시오.<br>(1) \\(w+\\overline{w}\\)<br>(2) \\(w\\overline{w}\\)<br>(3) \\(w^2\\)<br>(4) \\(w^2+w+1\\)<br>(5) 주기성은?", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "\\(x^3=1\\)의 한 허근을 \\(\\omega\\)라 할 때, \\(\\omega^{100}+\\omega^{101}+\\omega^{102}\\)의 값을 구하시오.",
+                "\\(x^3=1\\)의 한 허근을 \\(\\omega\\)라 할 때, \\((1+\\omega)(1+\\omega^2)\\)의 값을 구하시오.",
+                "\\(x^3=1\\)의 한 허근을 \\(\\omega\\)라 할 때, \\(\\omega^{10}+\\omega^{20}+\\omega^{30}\\)의 값과 \\((1-\\omega)(1-\\omega^2)\\)의 값을 구하시오."
+              ]
+            },
+            { question: "Q5. \\(x^3=-1\\)의 한 허근을 \\(w\\)라 할 때, 다음을 답하시오.<br>(1) \\(w+\\overline{w}\\)<br>(2) \\(w\\overline{w}\\)<br>(3) \\(w^2\\)<br>(4) \\(w^2-w+1\\)<br>(5) 주기성은?", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "\\(x^3=-1\\)의 한 허근을 \\(\\omega\\)라 할 때, \\(\\omega^{50}+\\omega^{51}+\\omega^{52}\\)의 값을 구하시오.",
+                "\\(x^3=-1\\)의 한 허근을 \\(\\omega\\)라 할 때, \\((1+\\omega)(1+\\omega^2)\\)의 값을 구하시오.",
+                "\\(x^3=-1\\)의 한 허근을 \\(\\omega\\)라 할 때, \\(\\omega^{15}+\\omega^{30}+\\omega^{45}\\)의 값과 \\(\\omega^3+\\omega^6+\\omega^9\\)의 값을 구하시오."
+              ]
+            },
+            { question: "Q6. 이차방정식 \\(x^2+x+1=0\\)의 한 근을 \\(w\\)라 할 때, 다음 식의 값을 구하여라.<br>\\((w+\\frac{1}{w})+(w^2+\\frac{1}{w^2})+(w^3+\\frac{1}{w^3})+\\cdots+(w^{10}+\\frac{1}{w^{10}})\\)", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "이차방정식 \\(x^2+x+1=0\\)의 한 근을 \\(\\omega\\)라 할 때, \\(\\omega+\\omega^2+\\omega^3+\\cdots+\\omega^{12}\\)의 값을 구하시오.",
+                "이차방정식 \\(x^2+x+1=0\\)의 한 근을 \\(\\omega\\)라 할 때, \\((1+\\omega)(1+\\omega^2)(1+\\omega^3)(1+\\omega^4)\\)의 값을 구하시오.",
+                "이차방정식 \\(x^2+x+1=0\\)의 한 근을 \\(\\omega\\)라 할 때, \\(\\omega^5+\\omega^{10}+\\omega^{15}+\\omega^{20}\\)의 값을 구하시오."
+              ]
+            },
+            { question: "Q7. 사차방정식 \\(x(x-1)(x-2)(x-3)-3=0\\)의 두 허근을 \\(\\alpha, \\beta\\)라 할 때, \\(\\alpha^2+\\beta^2\\)의 값은?<br>① 0 ② 3 ③ 6 ④ 9 ⑤ 12", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "사차방정식 \\((x-1)(x-2)(x-3)(x-4)-1=0\\)의 네 근의 합을 구하시오.",
+                "사차방정식 \\(x(x-1)(x-2)(x-3)-8=0\\)의 두 허근을 \\(\\alpha, \\beta\\)라 할 때, \\(\\alpha+\\beta\\)의 값을 구하시오.",
+                "사차방정식 \\((x+1)(x)(x-1)(x-2)-4=0\\)의 두 허근을 \\(\\alpha, \\beta\\)라 할 때, \\(\\alpha\\beta\\)의 값을 구하시오."
+              ]
+            },
+            { question: "Q8. 사차방정식 \\(x^4-x^3-7x^2+x+6=0\\)의 네 실근 중 가장 작은 것을 \\(\\alpha\\), 가장 큰 것을 \\(\\beta\\)라 할 때, \\(\\beta-\\alpha\\)의 값을 구하시오.", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "사차방정식 \\(x^4-5x^3+5x^2+5x-6=0\\)의 네 실근 중 가장 작은 것을 \\(\\alpha\\), 가장 큰 것을 \\(\\beta\\)라 할 때, \\(\\beta-\\alpha\\)의 값을 구하시오.",
+                "사차방정식 \\(x^4-2x^3-7x^2+8x+12=0\\)의 네 실근을 작은 것부터 \\(\\alpha, \\beta, \\gamma, \\delta\\)라 할 때, \\(\\delta-\\alpha\\)의 값을 구하시오.",
+                "사차방정식 \\((x^2-1)(x^2-4)=12\\)의 네 실근 중 양수인 것을 \\(\\alpha, \\beta\\) (\\(\\alpha<\\beta\\))라 할 때, \\(\\beta-\\alpha\\)의 값을 구하시오."
+              ]
+            }
           ]},
           { id: 2, name: "Part2. 연립이차방정식", questions: [
-            { question: "Q1. 다음 연립방정식을 풀어라.<br>(1) \\(\\begin{cases}x^2+y^2+x=1\\\\x^2+y^2+y=3\\end{cases}\\)<br>(2) \\(\\begin{cases}x^2+xy-3y^2=-3\\\\x^2-xy+y^2=3\\end{cases}\\)", answer: "", hint: "", explanation: "" },
-            { question: "Q2. 연립방정식 \\(\\begin{cases}x+y=2a-4\\\\xy=a^2-4\\end{cases}\\)의 실근이 존재하지 않도록 하는 정수 \\(a\\)의 최솟값을 구하여라.", answer: "", hint: "", explanation: "" }
+            { question: "Q1. 다음 연립방정식을 풀어라.<br>(1) \\(\\begin{cases}x^2+y^2+x=1\\\\x^2+y^2+y=3\\end{cases}\\)<br>(2) \\(\\begin{cases}x^2+xy-3y^2=-3\\\\x^2-xy+y^2=3\\end{cases}\\)", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "다음 연립방정식을 풀어라.<br>(1) \\(\\begin{cases}x^2+y^2-2x=3\\\\x^2+y^2-2y=1\\end{cases}\\)<br>(2) \\(\\begin{cases}x^2+2xy+y^2=9\\\\x^2-y^2=5\\end{cases}\\)",
+                "다음 연립방정식을 풀어라.<br>(1) \\(\\begin{cases}x^2+y^2=5\\\\xy=2\\end{cases}\\)<br>(2) \\(\\begin{cases}x^2+xy-2y^2=4\\\\x^2-xy+y^2=7\\end{cases}\\)",
+                "다음 연립방정식을 풀어라.<br>(1) \\(\\begin{cases}x^2+y^2+3x=4\\\\x^2+y^2+3y=6\\end{cases}\\)<br>(2) \\(\\begin{cases}x+y=5\\\\x^2+y^2=13\\end{cases}\\)"
+              ]
+            },
+            { question: "Q2. 연립방정식 \\(\\begin{cases}x+y=2a-4\\\\xy=a^2-4\\end{cases}\\)의 실근이 존재하지 않도록 하는 정수 \\(a\\)의 최솟값을 구하여라.", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "연립방정식 \\(\\begin{cases}x+y=3a-2\\\\xy=2a^2-3\\end{cases}\\)의 실근이 존재하도록 하는 실수 \\(a\\)의 범위를 구하시오.",
+                "연립방정식 \\(\\begin{cases}x+y=a+1\\\\xy=a^2-2a\\end{cases}\\)의 실근이 존재하지 않도록 하는 정수 \\(a\\)의 개수를 구하시오. (단, \\(-5 \\leq a \\leq 5\\))",
+                "연립방정식 \\(\\begin{cases}x+y=4a-6\\\\xy=2a^2-5\\end{cases}\\)의 실근이 존재하도록 하는 정수 \\(a\\)의 최댓값을 구하시오."
+              ]
+            }
           ]},
           { id: 3, name: "Part3. 공통근과 부정방정식", questions: [
-            { question: "Q1.<br>(1) 부정방정식이란?<br>(2) 해가 정수인 부정방정식은 어떻게 푸는가?<br>(3) 해가 실수인 이차방정식은 어떻게 푸는가?", answer: "", hint: "", explanation: "" },
-            { question: "Q2. \\(x\\)에 대한 두 이차방정식 \\(x^2-ax+b=0, x^2-bx+a=0\\)이 오직 하나의 공통근을 가질 때, \\(a+b\\)의 값은?", answer: "", hint: "", explanation: "" },
-            { question: "Q3. \\(x\\)에 대한 이차방정식 \\(x^2+(m+1)x+2m-1=0\\)의 두 근이 정수가 되도록 하는 모든 정수 \\(m\\)의 값의 합을 구하여라.", answer: "", hint: "", explanation: "" }
+            { question: "Q1.<br>(1) 부정방정식이란?<br>(2) 해가 정수인 부정방정식은 어떻게 푸는가?<br>(3) 해가 실수인 이차방정식은 어떻게 푸는가?", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "부정방정식 \\(3x+2y=12\\)의 음이 아닌 정수해를 모두 구하고, 부정방정식을 푸는 방법을 설명하시오.",
+                "부정방정식과 연립방정식의 차이를 설명하고, 부정방정식 \\(2x+5y=20\\)의 자연수 해를 구하시오.",
+                "해가 실수인 이차 부정방정식 \\(x^2+ax+b<0\\)을 푸는 방법을 판별식과 관련지어 설명하시오."
+              ]
+            },
+            { question: "Q2. \\(x\\)에 대한 두 이차방정식 \\(x^2-ax+b=0, x^2-bx+a=0\\)이 오직 하나의 공통근을 가질 때, \\(a+b\\)의 값은?", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "\\(x\\)에 대한 두 이차방정식 \\(x^2+ax+2b=0, x^2+2bx+a=0\\)이 오직 하나의 공통근을 가질 때, \\(ab\\)의 값을 구하시오.",
+                "\\(x\\)에 대한 두 이차방정식 \\(x^2-2ax+b=0, x^2-bx+2a=0\\)이 오직 하나의 공통근을 가질 때, \\(a-b\\)의 값을 구하시오.",
+                "\\(x\\)에 대한 두 이차방정식 \\(x^2+ax+b+1=0, x^2+bx+a-1=0\\)이 오직 하나의 공통근을 가질 때, \\(a+b\\)의 값을 구하시오."
+              ]
+            },
+            { question: "Q3. \\(x\\)에 대한 이차방정식 \\(x^2+(m+1)x+2m-1=0\\)의 두 근이 정수가 되도록 하는 모든 정수 \\(m\\)의 값의 합을 구하여라.", answer: "", hint: "", explanation: "",
+              similarQuestions: [
+                "\\(x\\)에 대한 이차방정식 \\(x^2+(k-2)x+3k-5=0\\)의 두 근이 정수가 되도록 하는 모든 정수 \\(k\\)의 값의 합을 구하시오.",
+                "\\(x\\)에 대한 이차방정식 \\(x^2+2(m-1)x+m+3=0\\)의 두 근이 정수가 되도록 하는 모든 정수 \\(m\\)의 개수를 구하시오.",
+                "\\(x\\)에 대한 이차방정식 \\(x^2-(n+3)x+2n+1=0\\)의 두 근이 정수가 되도록 하는 모든 정수 \\(n\\)의 값을 구하시오."
+              ]
+            }
           ]}
         ]
       },
